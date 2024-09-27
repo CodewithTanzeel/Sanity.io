@@ -8,7 +8,7 @@ export const subject = defineType({
     defineField({
       name: "subject",
       type: "string",
-      title: "Select Your Subject",
+      title: "Enter Your Subject",
     }),
   ],
 });
