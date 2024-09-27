@@ -55,7 +55,42 @@ export const student = {
       Title: "Resume/CV",
       type: "file",
     },
-   
-    
+    {
+      name: "address",
+      title: "Address",
+      type: "object",
+      fields: [
+        {
+          name: "streetAddress",
+          title: "Street Address",
+          type: "string",
+          description: "The street address of the location",
+        },
+        {
+          name: "city",
+          title: "City",
+          type: "string",
+          description: "The city of the location",
+        },
+        {
+          name: "state",
+          title: "State",
+          type: "string",
+          description: "The state or province of the location",
+        },
+        {
+          name: "postalCode",
+          title: "Postal Code",
+          type: "string",
+          description: "The postal or ZIP code of the location",
+        },
+        {
+          name: "country",
+          title: "Country",
+          type: "string",
+          description: "The country of the location",
+        },
+      ],
+    },
   ],
 };
