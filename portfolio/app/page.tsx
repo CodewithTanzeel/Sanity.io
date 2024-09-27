@@ -13,7 +13,7 @@ export default async function Home() {
     <main>
       <h1 className="text-align justify-center bg-center">Sanity Schema</h1>
 
-      {data.map((val:any, i: number) => {
+      {data.map((val: any, i: number) => {
         return (
           <>
             <h1>{val.name}</h1>
