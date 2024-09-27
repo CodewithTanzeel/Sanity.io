@@ -27,13 +27,13 @@ export const teacher = {
     },
     {
       name: "subject",
-      type: "referance",
+      type: "reference",
       title: "Select Subject",
       to: [{ type: "subjects" }],
     },
     {
       name: "student",
-      type: "referance",
+      type: "reference",
       title: "Select Student",
       to: [{ type: "student" }],
     },
