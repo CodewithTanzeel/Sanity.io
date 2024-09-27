@@ -12,6 +12,7 @@ export const teacher = {
       name: "age",
       type: "string",
       title: "Teacher Age",
+      hidden: ({ document }: any) => document,
     },
     {
       name: "gender",
