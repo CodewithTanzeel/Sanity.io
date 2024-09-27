@@ -31,5 +31,11 @@ export const teacher = {
       title: "Select Subject",
       to: [{ type: "subjects" }],
     },
+    {
+      name: "student",
+      type: "referance",
+      title: "Select Student",
+      to: [{ type: "student" }],
+    },
   ],
 };
