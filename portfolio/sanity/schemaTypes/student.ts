@@ -7,11 +7,13 @@ export const student = {
       name: "name",
       type: "string",
       title: "Student Name",
+      validation: (rule) => rule.required(),
     },
     {
       name: "age",
       type: "string",
       title: "Student Age",
+      validation: (rule) => rule.required(),
     },
     {
       name: "gender",
@@ -92,6 +94,5 @@ export const student = {
         },
       ],
     },
-   
   ],
 };

@@ -7,12 +7,15 @@ export const teacher = {
       name: "name",
       type: "string",
       title: "Teacher Name",
+      validation: (rule) => rule.required(),
     },
     {
       name: "age",
       type: "string",
       title: "Teacher Age",
       hidden: ({ document }: any) => document.name === "Ratanlal",
+      readOnly: ({ document }: any) => document.name === "sarmad",
+      validation: (rule) => rule.max(60).warning("Max age is 60"),
     },
     {
       name: "gender",
