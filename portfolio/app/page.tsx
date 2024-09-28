@@ -1,11 +1,9 @@
 import Image from "next/image";
+import { PortableText } from "@portabletext/react";
 import { client } from "../../portfolio/sanity/lib/client";
 
 async function getData() {
-  const fetchData = await client.fetch(`*[_type == 'test']{
-  name,
-  "imageUrl": image.asset->url
-}`);
+  const fetchData = await client.fetch(`*[_type == 'rich'] {content}`);
   return fetchData;
 }
 
@@ -22,8 +20,7 @@ export default async function Home() {
       {data.map((val: any) => {
         return (
           <>
-            <h1>{val.name}</h1>
-            <Image alt="Tom" width={500} height={500} src={val.imageUrl} />
+            <PortableText value={data[0].content} />
           </>
         );
       })}
